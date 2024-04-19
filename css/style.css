@@ -92,7 +92,7 @@ body{
 .uslugi-list:hover{
     .mascot{
         transition: 3s;
-        transform: scale(0.9, 1.05);
+        transform: scale(0.9);
     }
 }
 .text-uslugi{
