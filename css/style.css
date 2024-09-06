@@ -1,8 +1,7 @@
 @font-face {
     font-family: 'JuleeRegular';
     src: url('font/JuleeRegular.eot');
-    src: 
-         url('/font/JuleeRegular.woff2') format('woff2'),
+    src: url('/font/JuleeRegular.woff2') format('woff2'),
          url('/font/JuleeRegular.woff') format('woff');
     
 }
@@ -12,14 +11,17 @@ body{
 }
 .container{
     width: 100%;
-    max-width:  1470px;
+    max-width:  1560px;
     margin: 0 auto;
     margin-bottom: 40px;
+    padding:  0 20px;
+    box-sizing: border-box;
+    transition: opacity 500ms ease-in-out, transform 500ms ease-in-out; 
    
 
 }
 .container-first{
-    margin-top: 200px;
+    margin-top: 40px;
     
 }
 .container-header{
@@ -28,6 +30,7 @@ body{
     flex-wrap: wrap;
     align-items: center;
     gap: 26px;
+    justify-content: space-between;
     
     
 }
@@ -42,12 +45,16 @@ body{
     
 }
 .local{
+    padding: 26px 29px;
     width: 540px;
     max-width: 540px;
     min-height: 163px;
     box-sizing: border-box;
     border-radius: 46px;
     background-color: #181818;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    
 }
 .container-uslugi{
     display: flex;
@@ -56,7 +63,61 @@ body{
     padding: 0;
     gap:30px;
     list-style-type: none;
+    justify-content: space-between;
 }
+.date-wp{
+    position: relative;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #181818;
+    transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+    cursor: pointer;
+}
+.date-wp:hover{
+    background-color: #899285;
+    color:#181818;
+}
+.boreder-left{
+    border-top-left-radius: 10px;
+}
+.boreder-rt{
+    border-top-right-radius: 10px;
+}
+.boreder-rt-bt{
+    border-bottom-right-radius: 10px;
+}
+.boreder-left-bt{
+    border-bottom-left-radius: 10px;
+}
+.bron{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    z-index: 2;
+}
+.svg-size{
+    height: 25px;
+    width: 25px;
+}
+.left-item{
+    border-left: 0px ;
+}
+.top-item{
+    border-top: 0;
+}
+.rt-item{
+    border-right: 0;
+}
+.bt-item{
+    border-bottom: 0;
+}
+
+
 .uslugi-list{
     position: relative;
     width: 100%;
@@ -67,8 +128,12 @@ body{
     flex-direction:row;
     overflow: hidden;
     border-radius: 46px;
-    box-shadow: 0px 10px 10px rgba(24, 24, 24, 0.4);
     
+    transition: opacity 500ms ease-in-out, transform 500ms ease-in-out, box-shadow 400ms ease-in-out ; 
+    box-shadow: 10px 10px 10px rgba(148, 148, 148, 0.4);
+}
+.uslugi-list:hover{
+    box-shadow: 0px 10px 10px rgba(24, 24, 24, 0.4);
 }
 .opisnie-tatto{
     width: 100%;
@@ -90,12 +155,12 @@ body{
     background-color: #ABA7A7;
     box-shadow: 0px 10px 10px rgba(24, 24, 24, 0.4);
 }
-.footer-opsinaie-tatto:hover{
+/* .footer-opsinaie-tatto:hover{
     .mascot{
         transition: 3s;
         transform: scale(0.9);
     }
-}
+} */
 
 .text-uslugi{
     margin: 0;
@@ -163,6 +228,7 @@ body{
     color: #000;
     text-decoration: none;
     border: 3px solid #181818;
+    transition:background-color 300ms ease-in-out ;
 }
 .links-tatto:hover{
     background-color: #908D8D;
@@ -188,12 +254,13 @@ body{
     border-radius: 46px;
     box-sizing: border-box;
     background-color: #DD7979;
-    box-shadow: 0px 10px 10px rgba(24, 24, 24, 0.4);
+    
 }
 .container-footer{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: space-between;
 
 }
 .block-1{
@@ -255,7 +322,10 @@ body{
     background-size: 44px;
     background-position: left center;
     background-repeat: no-repeat;
-    
+}
+.inst , .telegram{
+    display: flex;
+    align-items: center;
 }
 .work-sketch{
     width: 100%;
@@ -312,6 +382,7 @@ body{
     text-decoration: none;
     border-radius: 15px;
     background-color: #ABA7A7;
+    transition:background-color 300ms ease-in-out ;
 
 }
 .see:hover{
@@ -374,6 +445,7 @@ align-items: center;
     flex-wrap: wrap;
     gap:27px;
     list-style: none;
+    justify-content: center;
 }
 .my-work-foto{
     width: 100%;
@@ -383,7 +455,7 @@ align-items: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    transition: opacity 500ms ease-in-out, transform 500ms ease-in-out; 
     border-radius: 46px;
     background-color:#181818;
 }
@@ -397,17 +469,17 @@ align-items: center;
     border-radius: 62px;
     border: 3px solid #899285;
 }
-.my-work-foto:hover{
-    transition: 3s;
-    .size-foto{
-        transition: 4s;
+.size-foto:hover{
+    
+        
         transform: scale(1.3);
-    }
+    
 }
 .size-foto{
     width: 100%;
     height: 100%;
     min-height:430px ;
+    transition: transform 700ms ease-in-out;
 }
 .name-foto{
     display: flex;
