@@ -1,3 +1,7 @@
+
+console.log('пипка')
+
+
 document.addEventListener('DOMContentLoaded', function() {
 
     let blocks = document.querySelectorAll('.my-work-foto');
