@@ -117,7 +117,21 @@ body{
     border-bottom: 0;
 }
 
-
+.gif-saersh-button{
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #899285;
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    max-width: 200px;
+}
 .uslugi-list{
     position: relative;
     width: 100%;
@@ -134,6 +148,50 @@ body{
 }
 .uslugi-list:hover{
     box-shadow: 0px 10px 10px rgba(24, 24, 24, 0.4);
+}
+.form-wp{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid lavenderblush;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: indianred;
+}
+.form-input-wp{
+    background-color: darkorange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+.btn-wp{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.gif-wp{
+    min-height: 200px;
+    max-width: 200px;
+    width: 100%;
+}
+.content-wp{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gif-size{
+    width: 200px;
+    height: 200px;
+    min-height: 200px;
+    max-width: 200px;
 }
 .opisnie-tatto{
     width: 100%;
